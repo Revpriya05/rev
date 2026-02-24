@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HR Management | Revpriya Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<!-- Lottie Player -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<style>
+
+/* ================= GLOBAL ================= */
+body{
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* ================= HEADER ================= */
+.main-header{
+    background: #0a1f44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;   /* reduced */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    font-weight:600;
+    color:white;
+}
+
+.logo-section img{
+    width:45px;
+    margin-right:10px;
+}
+
+/* NAVIGATION */
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.nav-links a i{
+    margin-right:5px;
+}
+
+.nav-links a:hover{
+    color:#f4c430;
+}
+/* ================= HR SECTION ================= */
+
+.hr-section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 40px;
+}
+
+/* CENTER HEADER */
+.hr-header-center{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.hr-header-center h1{
+    color:#0a1f44;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hr-header-center p{
+    color:#555;
+    max-width:1100px;
+    margin:auto;
+    line-height:1.6;
+    white-space:nowrap;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:900px){
+    .hr-header-center p{
+        white-space:normal;
+    }
+}
+
+/* FLEX CONTAINER */
+.hr-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* LEFT TEXT */
+.hr-text{
+    flex:1;
+}
+
+.hr-text h2{
+    color:#0a1f44;
+    margin-top:25px;
+}
+
+.hr-text ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+/* RIGHT ANIMATION */
+.hr-animation{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+/* FLOAT EFFECT */
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+lottie-player{
+animation:float 5s infinite ease-in-out;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:#0a1f44;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+/* ================= FOOTER ================= */
+.main-footer{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.footer-links a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.footer-links a i{
+    margin-right:6px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.hr-container{
+    flex-direction:column;
+}
+
+.hr-animation{
+    justify-content:center;
+    margin-top:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+    <div class="logo-section">
+        <img src="logo.png" alt="Logo">
+        <span>Revpriya Technologies</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="index.html#about"><i class="fas fa-info-circle"></i>About</a>
+        <a href="index.html#services"><i class="fas fa-briefcase"></i>Services</a>
+        <a href="index.html#industries"><i class="fas fa-industry"></i>Industries</a>
+        <a href="careers.html"><i class="fas fa-user-graduate"></i>Careers</a>
+        <a href="index.html#contact"><i class="fas fa-envelope"></i>Contact</a>
+    </nav>
+</header>
+
+<!-- HR SECTION -->
+<section class="hr-section">
+
+<!-- CENTER TITLE -->
+<div class="hr-header-center">
+
+<h1>HR Management</h1>
+
+<p>
+We manage complete employee lifecycle operations ensuring smooth HR processes,compliance, and workforce efficiency.
+</p>
+
+</div>
+
+
+<!-- FLEX CONTENT -->
+<div class="hr-container">
+
+
+<!-- LEFT SIDE -->
+<div class="hr-text">
+
+<h2><i class="fas fa-users"></i> Core HR Management</h2>
+<ul>
+<li>Employee Lifecycle Management</li>
+<li>Attendance & Leave Management</li>
+<li>Performance Management Systems</li>
+<li>HR Strategy & Workforce Planning</li>
+</ul>
+
+
+<h2><i class="fas fa-file-alt"></i> HR Documentation</h2>
+<ul>
+<li>Employee onboarding documentation</li>
+<li>Offer letters and appointment letters</li>
+<li>HR policy and handbook preparation</li>
+<li>Employee records management</li>
+<li>Exit and clearance documentation</li>
+</ul>
+
+
+<h2><i class="fas fa-shield-alt"></i> HR Compliance</h2>
+<ul>
+<li>Labour law compliance management</li>
+<li>PF, ESI statutory compliance</li>
+<li>Compliance audits and reporting</li>
+<li>Government register maintenance</li>
+<li>Compliance advisory and updates</li>
+</ul>
+
+<a href="index.html" class="btn">← Back to Home</a>
+
+</div>
+
+
+<!-- RIGHT SIDE ANIMATION -->
+<div class="hr-animation">
+
+<lottie-player
+src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+background="transparent"
+speed="1"
+style="width:400px;height:400px;"
+loop
+autoplay>
+</lottie-player>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+<p>© 2026 Revpriya Technologies. All Rights Reserved.</p>
+
+<div class="footer-links">
+<a href="mailto:info@revpriyatechnologies.com"><i class="fas fa-envelope"></i>Email</a>
+<a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+</div>
+</footer>
+
+</body>
+</html>

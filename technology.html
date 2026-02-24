@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Technology Services | Revpriya Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome (FOR ICONS) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Lottie Animation Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<style>
+
+/* ================= GLOBAL ================= */
+body{
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* ================= HEADER ================= */
+.main-header{
+    background: #0a1f44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;   /* reduced */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    font-weight:600;
+    color:white;
+}
+
+.logo-section img{
+    width:45px;
+    margin-right:10px;
+}
+
+/* NAVIGATION */
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.nav-links a i{
+    margin-right:5px;
+}
+
+.nav-links a:hover{
+    color:#f4c430;
+}
+
+/* ================= PAGE ================= */
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* MAIN SECTION */
+.section-container{
+    padding:60px 40px;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* LEFT CONTENT */
+.content{
+    width:55%;
+}
+
+h1{
+    color:#0a1f44;
+    font-size:36px;
+}
+
+.content p{
+    font-size:16px;
+    line-height:1.6;
+    color:#444;
+}
+
+.content ul{
+    margin-top:20px;
+}
+
+.content li{
+    margin-bottom:10px;
+}
+
+/* RIGHT ANIMATION */
+.animation{
+    width:45%;
+}
+
+h1{color:#0a1f44;}
+ul{line-height:1.8;}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:10px 20px;
+    background:#0a1f44;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* FLOAT */
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0);}
+}
+
+lottie-player{
+animation:float 5s ease-in-out infinite;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 900px) {
+
+/* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    .search-box {
+        margin-top: 10px;
+    }
+
+    .search-box input {
+        width: 200px;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Enquiry Section */
+    .enquiry-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enquiry-content,
+    .enquiry-form-box {
+        width: 100%;
+    }
+
+    /* Reduce section padding */
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Industry boxes */
+    .industry {
+        width: 100%;
+        max-width: 320px;
+    }
+ }
+
+/* ================= FOOTER ================= */
+.main-footer{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.footer-links a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.footer-links a i{
+    margin-right:6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.container{flex-direction:column;text-align:center;}
+.content,.animation{width:100%;}
+.nav-links{flex-wrap:wrap;justify-content:center;margin-top:10px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+
+<div class="logo-section">
+<img src="logo.png">
+<span>Revpriya Technologies</span>
+</div>
+
+<nav class="nav-links">
+<a href="index.html"><i class="fas fa-home"></i>Home</a>
+<a href="index.html#about"><i class="fas fa-info-circle"></i>About</a>
+<a href="index.html#services"><i class="fas fa-briefcase"></i>Services</a>
+<a href="index.html#industries"><i class="fas fa-industry"></i>Industries</a>
+<a href="careers.html"><i class="fas fa-user-graduate"></i>Careers</a>
+<a href="index.html#contact"><i class="fas fa-envelope"></i>Contact</a>
+</nav>
+
+</div>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+<div class="content">
+
+<h1>Technology Services</h1>
+
+<p>
+We design and develop reliable, scalable technology solutions including web, mobile, and software applications tailored to your business needs.
+</p>
+
+<ul>
+<li>Core Technology Services</li>
+<li>UI/UX Design & Web Solutions</li>
+<li>Software Testing & IT Support</li>
+<li>Cloud & Deployment Services</li>
+</ul>
+
+<a href="index.html" class="btn">← Back to Home</a>
+
+</div>
+
+
+<div class="animation">
+
+<lottie-player
+src="https://assets1.lottiefiles.com/packages/lf20_iorpbol0.json"
+background="transparent"
+speed="1"
+style="width:360px;height:360px;"
+loop
+autoplay>
+</lottie-player>
+</div>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+<p>© 2026 Revpriya Technologies. All Rights Reserved.</p>
+
+<div class="footer-links">
+<a href="mailto:info@revpriyatechnologies.com"><i class="fas fa-envelope"></i>Email</a>
+<a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+</div>
+</footer>
+
+</script>
+
+</body>
+</html>
+

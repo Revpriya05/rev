@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers - Revpriya Technologies</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ================= GLOBAL ================= */
+body{
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* ================= HEADER ================= */
+.main-header{
+    background:#0a1f44;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    color:white;
+    font-weight:600;
+}
+
+.logo-section img{
+    width:45px;
+    margin-right:10px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+.nav-links a i{
+    margin-right:6px;
+}
+
+.nav-links a:hover{
+    color:#f4c430;
+}
+
+/* ================= BANNER ================= */
+.banner{
+    background:linear-gradient(-45deg,#0a2a66,#1e4db7,#0a2a66);
+    background-size:400% 400%;
+    animation:gradient 8s ease infinite;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* ================= SECTION ================= */
+section{
+    padding:70px 40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* ================= JOB GRID ================= */
+.job-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.job-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.job-card button{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#0a1f44;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.job-card button:hover{
+    background:#f4c430;
+    color:#0a1f44;
+}
+
+/* ================= SUBMIT RESUME ================= */
+.resume-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    margin-top:30px;
+}
+
+.resume-info{
+    width:45%;
+}
+
+.resume-info h3{
+    margin-bottom:15px;
+    color:#0a1f44;
+}
+
+.resume-info p{
+    line-height:1.6;
+    color:#444;
+}
+
+.resume-form{
+    width:50%;
+    background:#0a1f44;
+    padding:35px;
+    border-radius:15px;
+}
+
+.resume-form input,
+.resume-form textarea,
+.resume-form select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.resume-form input[type="file"]{
+    color:white;
+}
+
+.resume-form button{
+    width:100%;
+    padding:12px;
+    background:#081633;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.resume-form button:hover{
+    background:#f4c430;
+    color:#0a1f44;
+}
+
+/* ================= OVERLAY ================= */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup{
+    background:white;
+    width:90%;
+    max-width:600px;
+    padding:30px;
+    border-radius:10px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.popup input{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.popup button{
+    margin-top:15px;
+    padding:10px;
+    width:100%;
+    background:#0a1f44;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.popup button:hover{
+    background:#f4c430;
+    color:#0a1f44;
+}
+
+.success{
+    color:green;
+    font-weight:bold;
+}
+
+/* ================= ERROR ================= */
+.error{
+    color:#ff4d4d;
+    font-size:13px;
+    margin-top:-10px;
+    margin-bottom:10px;
+    display:none;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+footer a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+footer a i{
+    margin-right:5px;
+}
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+
+    .main-header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .resume-container{
+        flex-direction:column;
+    }
+
+    .resume-info,
+    .resume-form{
+        width:100%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-section">
+        <img src="logo.png" alt="Logo">
+        <span>Revpriya Technologies</span>
+    </div>
+
+     <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="index.html#about"><i class="fas fa-info-circle"></i>About</a>
+        <a href="index.html#services"><i class="fas fa-briefcase"></i>Services</a>
+        <a href="index.html#industries"><i class="fas fa-industry"></i>Industries</a>
+        <a href="careers.html"><i class="fas fa-user-graduate"></i>Careers</a>
+        <a href="index.html#contact"><i class="fas fa-envelope"></i>Contact</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<div class="banner">
+    <h1>Join Revpriya Technologies</h1>
+    <p>Build your future with us</p>
+</div>
+
+<!-- CURRENT OPENINGS -->
+<section>
+    <h2>Current Openings</h2>
+
+    <div class="job-grid">
+
+        <div class="job-card">
+            <h3>JOB ID: 012</h3>
+            <p><strong>Position:</strong> Fullstack Developer</p>
+            <p>Develop and maintain web applications.</p>
+            <button onclick="openJob('012','Fullstack Developer','Develop and maintain web applications using modern technologies.')">
+                Apply Now
+            </button>
+        </div>
+
+        <div class="job-card">
+            <h3>JOB ID: 013</h3>
+            <p><strong>Position:</strong> HR Executive</p>
+            <p>Handle recruitment and HR operations.</p>
+            <button onclick="openJob('013','HR Executive','Manage end-to-end recruitment and HR activities.')">
+                Apply Now
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- OVERLAY POPUP -->
+<div class="overlay" id="overlay">
+    <div class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popupContent"></div>
+    </div>
+</div>
+
+<!-- ================= SUBMIT RESUME ================= -->
+<section>
+    <h2 style="text-align:center;">Submit Your Resume</h2>
+
+    <div class="resume-container">
+
+        <div class="resume-info">
+            <h3>Position not listed?</h3>
+            <p>
+                If your expected job is not listed above,
+                submit your resume and our HR team will get in touch with you.
+            </p>
+        </div>
+
+        <div class="resume-form">
+            <form id="resumeForm">
+
+                <input type="text" placeholder="Full Name *" required>
+                <input type="email" placeholder="Email *" required>
+
+                <select id="countryCode" required>
+                    <option value="">Select Code *</option>
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                </select>
+
+                <input type="tel" id="mobile" placeholder="Mobile Number *" required>
+                <div class="error" id="mobileError">Invalid Mobile Number</div>
+
+                <input type="text" placeholder="Position Looking For *" required>
+
+                <input type="file" required>
+
+                <textarea rows="4" placeholder="Message"></textarea>
+
+                <button type="submit">Submit Resume</button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Revpriya Technologies. All Rights Reserved.</p>
+    <div>
+        <a href="mailto:info@revpriyatechnologies.com">
+            <i class="fas fa-envelope"></i>Email
+        </a>
+        <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+    </div>
+</footer>
+
+<script>
+
+let appliedJobs = [];
+
+function openJob(id,position,jd){
+
+    document.getElementById("overlay").style.display="flex";
+
+    document.getElementById("popupContent").innerHTML=`
+        <h3>JOB ID: ${id}</h3>
+        <h4>${position}</h4>
+        <p>${jd}</p>
+        <button onclick="showForm('${id}','${position}')">
+            Confirm & Proceed
+        </button>
+    `;
+}
+
+function showForm(id,position){
+
+    document.getElementById("popupContent").innerHTML=`
+        <h3>JOB ID: ${id} | ${position}</h3>
+
+        <form onsubmit="submitApplication(event,'${id}')">
+            <input type="text" placeholder="Full Name *" required>
+            <input type="tel" placeholder="Mobile Number *" required>
+            <input type="email" id="email" placeholder="Email ID *" required>
+            <input type="file" required>
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div id="message"></div>
+    `;
+}
+
+function submitApplication(event,id){
+
+    event.preventDefault();
+
+    let email=document.getElementById("email").value;
+
+    if(appliedJobs.includes(id+"_"+email)){
+        document.getElementById("message").innerHTML=
+        "<p class='error'>User details already exist for this job.</p>";
+    }else{
+        appliedJobs.push(id+"_"+email);
+        document.getElementById("message").innerHTML=
+        "<p class='success'>✔ Application Sent</p>";
+    }
+}
+
+function closePopup(){
+    document.getElementById("overlay").style.display="none";
+}
+const form = document.getElementById("resumeForm");
+const mobile = document.getElementById("mobile");
+const error = document.getElementById("mobileError");
+
+form.addEventListener("submit", function(e){
+    if(mobile.value.length !== 10){
+        e.preventDefault();
+        error.style.display="block";
+        mobile.style.border="2px solid red";
+    }else{
+        error.style.display="none";
+        mobile.style.border="1px solid #ccc";
+    }
+});
+
+</script>
+
+</body>
+</html>
